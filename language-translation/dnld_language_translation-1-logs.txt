@@ -1,0 +1,76 @@
+2017-11-08 18:15:09,737 INFO - Preparing to run TaskInstance <TaskInstance: anju99/projects/dnld_language_translation/1 (id: rU6PBgRRcFMeLqFQPfDL9e)
+2017-11-08 18:15:09,758 INFO - Starting attempt 1 at 2017-11-09 02:15:09.741988
+2017-11-08 18:15:09,764 INFO - Downloading and setting up data sources
+2017-11-08 18:15:10,360 INFO - adding copy /code to /output and cd there
+2017-11-08 18:15:10,360 INFO - Pulling Docker image: floydhub/tensorflow:1.1.0-gpu-py3_aws.7
+2017-11-08 18:15:14,593 INFO - Starting container...
+2017-11-08 18:15:15,677 INFO - 
+################################################################################
+
+2017-11-08 18:15:15,679 INFO - Run Output:
+2017-11-08 18:15:47,320 INFO - [I 02:15:47.318 NotebookApp] Writing notebook server cookie secret to /root/.local/share/jupyter/runtime/notebook_cookie_secret
+2017-11-08 18:15:47,354 INFO - [W 02:15:47.354 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+2017-11-08 18:15:47,355 INFO - [W 02:15:47.354 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using authentication. This is highly insecure and not recommended.
+2017-11-08 18:15:47,861 INFO - [I 02:15:47.860 NotebookApp] Serving notebooks from local directory: /output
+2017-11-08 18:15:47,862 INFO - [I 02:15:47.860 NotebookApp] 0 active kernels
+2017-11-08 18:15:47,862 INFO - [I 02:15:47.860 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/notebooks/rU6PBgRRcFMeLqFQPfDL9e/
+2017-11-08 18:15:47,862 INFO - [I 02:15:47.860 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+2017-11-08 18:15:54,799 INFO - [I 02:15:54.798 NotebookApp] 302 GET /notebooks/rU6PBgRRcFMeLqFQPfDL9e (10.0.2.155) 0.58ms
+2017-11-08 18:16:25,061 INFO - [I 02:16:25.060 NotebookApp] Writing notebook-signing key to /root/.local/share/jupyter/notebook_secret
+2017-11-08 18:16:25,063 INFO - [W 02:16:25.061 NotebookApp] Notebook dlnd_language_translation.ipynb is not trusted
+2017-11-08 18:16:25,293 INFO - [W 02:16:25.292 NotebookApp] 404 GET /notebooks/rU6PBgRRcFMeLqFQPfDL9e/nbextensions/widgets/notebook/js/extension.js?v=20171109021547 (10.0.2.155) 7.84ms referer=https://www.floydlabs.com/notebooks/rU6PBgRRcFMeLqFQPfDL9e/notebooks/dlnd_language_translation.ipynb
+2017-11-08 18:16:30,995 INFO - [I 02:16:30.994 NotebookApp] Kernel started: 0bb1a106-f33c-4888-b5df-13ba0008a8d0
+2017-11-08 18:16:32,043 INFO - [I 02:16:32.042 NotebookApp] Adapting to protocol v5.1 for kernel 0bb1a106-f33c-4888-b5df-13ba0008a8d0
+2017-11-08 18:17:20,840 INFO - 2017-11-09 02:17:20.839264: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-11-08 18:17:20,842 INFO - 2017-11-09 02:17:20.839818: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties:
+2017-11-08 18:17:20,842 INFO - name: Tesla K80
+2017-11-08 18:17:20,842 INFO - major: 3 minor: 7 memoryClockRate (GHz) 0.8755
+2017-11-08 18:17:20,842 INFO - pciBusID 0000:00:1e.0
+2017-11-08 18:17:20,842 INFO - Total memory: 11.17GiB
+2017-11-08 18:17:20,843 INFO - Free memory: 11.11GiB
+2017-11-08 18:17:20,843 INFO - 2017-11-09 02:17:20.839855: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0
+2017-11-08 18:17:20,843 INFO - 2017-11-09 02:17:20.839885: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y
+2017-11-08 18:17:20,980 INFO - 2017-11-09 02:17:20.979081: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0)
+2017-11-08 18:17:21,061 INFO - 2017-11-09 02:17:21.060559: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0)
+2017-11-08 18:18:02,903 INFO - 2017-11-09 02:18:02.902546: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0)
+2017-11-08 18:18:02,907 INFO - 2017-11-09 02:18:02.906366: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0)
+2017-11-08 18:18:13,636 INFO - 2017-11-09 02:18:13.634795: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0)
+2017-11-08 18:18:31,963 INFO - [I 02:18:31.961 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:18:51,442 INFO - 2017-11-09 02:18:51.440955: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0)
+2017-11-08 18:19:14,972 INFO - 2017-11-09 02:19:14.971058: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 3888 get requests, put_count=3349 evicted_count=1000 eviction_rate=0.298597 and unsatisfied allocation rate=0.421553
+2017-11-08 18:19:14,974 INFO - 2017-11-09 02:19:14.971147: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+2017-11-08 18:19:17,481 INFO - 2017-11-09 02:19:17.480113: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 2126 get requests, put_count=2626 evicted_count=1000 eviction_rate=0.380807 and unsatisfied allocation rate=0.246002
+2017-11-08 18:19:17,482 INFO - 2017-11-09 02:19:17.480204: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 256 to 281
+2017-11-08 18:19:23,491 INFO - 2017-11-09 02:19:23.489500: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 17908 get requests, put_count=17974 evicted_count=1000 eviction_rate=0.0556359 and unsatisfied allocation rate=0.0554501
+2017-11-08 18:19:23,494 INFO - 2017-11-09 02:19:23.489608: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 655 to 720
+2017-11-08 18:20:31,858 INFO - [I 02:20:31.857 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:22:32,171 INFO - [I 02:22:32.170 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:24:32,222 INFO - [I 02:24:32.220 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:26:32,210 INFO - [I 02:26:32.208 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:28:31,740 INFO - [I 02:28:31.739 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:30:31,884 INFO - [I 02:30:31.883 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:30:36,446 INFO - 2017-11-09 02:30:36.445571: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 5904110 get requests, put_count=5904110 evicted_count=3000 eviction_rate=0.000508121 and unsatisfied allocation rate=0.000522856
+2017-11-08 18:32:31,736 INFO - [I 02:32:31.735 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:34:31,881 INFO - [I 02:34:31.879 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:36:31,884 INFO - [I 02:36:31.882 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:38:32,344 INFO - [I 02:38:32.343 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:40:31,863 INFO - [I 02:40:31.862 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:42:31,878 INFO - [I 02:42:31.876 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:44:33,071 INFO - [I 02:44:33.070 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:45:47,562 INFO - 2017-11-09 02:45:47.561080: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 17528834 get requests, put_count=17528832 evicted_count=13000 eviction_rate=0.000741635 and unsatisfied allocation rate=0.000746713
+2017-11-08 18:46:32,167 INFO - [I 02:46:32.165 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:48:31,953 INFO - [I 02:48:31.951 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:50:32,132 INFO - [I 02:50:32.131 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:52:33,082 INFO - [I 02:52:33.080 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:54:32,027 INFO - [I 02:54:32.026 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:56:31,497 INFO - [I 02:56:31.495 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 18:58:31,485 INFO - [I 02:58:31.484 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 19:00:31,489 INFO - [I 03:00:31.488 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 19:00:48,117 INFO - 2017-11-09 03:00:48.115737: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 29028478 get requests, put_count=29028476 evicted_count=23000 eviction_rate=0.000792325 and unsatisfied allocation rate=0.000795391
+2017-11-08 19:02:31,502 INFO - [I 03:02:31.501 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 19:02:38,925 INFO - 2017-11-09 03:02:38.924878: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0)
+2017-11-08 19:04:54,953 INFO - [I 03:04:54.951 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 19:05:04,658 INFO - [I 03:05:04.657 NotebookApp] 302 GET /notebooks/rU6PBgRRcFMeLqFQPfDL9e (10.0.2.155) 0.61ms
+2017-11-08 19:05:09,267 INFO - [I 03:05:09.265 NotebookApp] Saving file at /dlnd_language_translation.ipynb
+2017-11-08 19:06:50,490 INFO - [I 03:06:50.488 NotebookApp] 302 GET /notebooks/rU6PBgRRcFMeLqFQPfDL9e (10.0.2.155) 0.54ms
+2017-11-08 19:07:08,977 INFO - [I 03:07:08.975 NotebookApp] Kernel shutdown: 0bb1a106-f33c-4888-b5df-13ba0008a8d0
