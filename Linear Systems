@@ -1,0 +1,381 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Class- UNH - 6001",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOB8inTB4jA3GIwNl4FY3Pz",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/thedatasense/graphdef/blob/master/Linear%20Systems\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "p8N4A0T6qyIb"
+      },
+      "source": [
+        "#import required packages\n",
+        "import numpy as np"
+      ],
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Dgm-vpCeLUmo"
+      },
+      "source": [
+        "# Basic array\n",
+        "A = np.array([[-4,6,3],[0,1,2]])\n",
+        "B = np.array([[2,3,4],[4,5,6]])\n"
+      ],
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "q5xac2KdMeRw"
+      },
+      "source": [
+        "Addition of matrices\n",
+        "\n",
+        "The sum of two matrices and of the same size is written\n",
+        "and has the entries obtained by adding the corresponding entries\n",
+        "of A and B. Matrices of different sizes cannot be added."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QCshguY_L1_4",
+        "outputId": "d501ab78-f4c0-44e7-bcd3-390999aa3e5e"
+      },
+      "source": [
+        "np.add(A,B)"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[-2,  9,  7],\n",
+              "       [ 4,  6,  8]])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3uYa-O0mMvol",
+        "outputId": "0302f602-a949-405c-acc7-4c9257a60bbd"
+      },
+      "source": [
+        "A"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[-4,  6,  3],\n",
+              "       [ 0,  1,  2]])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 9
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "O1yrti4VMoqZ",
+        "outputId": "4da19679-aecf-4a95-edd1-e85d2542820b"
+      },
+      "source": [
+        "#Scalar multiplication\n",
+        "\n",
+        "np.multiply(A,3)"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[-12,  18,   9],\n",
+              "       [  0,   3,   6]])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1wFckO45Nxsg",
+        "outputId": "898f87ec-2fb2-4194-d23e-e126607d1b92"
+      },
+      "source": [
+        "A "
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[-4,  6,  3],\n",
+              "       [ 0,  1,  2]])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Kah6O3X8N0xJ",
+        "outputId": "0a931f2d-2153-47ef-d3c9-090bbcdda203"
+      },
+      "source": [
+        "B"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[2, 3, 4],\n",
+              "       [4, 5, 6]])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JIykxb1uN2pm",
+        "outputId": "6fd953ca-4a0e-48ff-8eb6-7508306253bc"
+      },
+      "source": [
+        "np.multiply(A,B)"
+      ],
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[-8, 18, 12],\n",
+              "       [ 0,  5, 12]])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "P0565selODjD"
+      },
+      "source": [
+        "C = np.array([[2,3,4],[3,4,5]])"
+      ],
+      "execution_count": 19,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "DtTgY2C6OIdS"
+      },
+      "source": [
+        "D= np.array([[2,3],[4,5],[4,5]])"
+      ],
+      "execution_count": 20,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1OwN_QaSOxQE",
+        "outputId": "9126fd28-4c1c-4bbb-9cbf-6d638733b225"
+      },
+      "source": [
+        "C"
+      ],
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[2, 3, 4],\n",
+              "       [3, 4, 5]])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 25
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PRF03j7RQHqv",
+        "outputId": "3f3bb920-c2d3-4976-ce4f-21021992554f"
+      },
+      "source": [
+        "D"
+      ],
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[2, 3],\n",
+              "       [4, 5],\n",
+              "       [4, 5]])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 27
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SEL4d_5uQKMl",
+        "outputId": "bc283fff-2c09-4169-9522-26c6a9348cd7"
+      },
+      "source": [
+        "np.matmul(C,D)"
+      ],
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[32, 41],\n",
+              "       [42, 54]])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZXzMefmgOUHM",
+        "outputId": "d94a7501-aefd-4345-d586-405309ac82c7"
+      },
+      "source": [
+        "np.dot(C,D)"
+      ],
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[32, 41],\n",
+              "       [42, 54]])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 26
+        }
+      ]
+    }
+  ]
+}
